@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIVECLEAN | Limpieza Profesional de Colchones y Muebles</title>
+
+<meta name="description" content="Limpieza profesional de colchones, muebles, sillones y alfombras a domicilio. Eliminamos ácaros, manchas y olores. Atención inmediata por WhatsApp.">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6f8;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:white;
+color:#0d6efd;
+padding:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+header img{
+width:200px;
+height:auto;
+}
+
+header h1{
+font-size:32px;
+letter-spacing:3px;
+}
+
+/* HERO */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover no-repeat;
+height:420px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* BOTONES */
+
+.btn{
+background:#25D366;
+color:white;
+padding:16px 26px;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:#1ebd59;
+}
+
+/* FACEBOOK BUTTON */
+
+.btn-facebook{
+background:#1877f2;
+color:white;
+padding:14px 24px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-facebook:hover{
+background:#145ddb;
+transform:scale(1.05);
+}
+
+/* PROMO */
+
+/* PROMO ESTILO CUPON */
+
+.promo{
+background:linear-gradient(135deg,#ffcc00,#ff9f00);
+padding:60px 20px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.promo::before{
+content:"OFERTA";
+position:absolute;
+top:15px;
+left:-40px;
+background:red;
+color:white;
+padding:8px 60px;
+font-weight:bold;
+transform:rotate(-35deg);
+font-size:14px;
+box-shadow:0 3px 8px rgba(0,0,0,0.3);
+}
+
+.promo h2{
+font-size:34px;
+color:#fff;
+text-shadow:1px 2px 5px rgba(0,0,0,0.3);
+}
+
+.promo p{
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+color:#333;
+}
+
+.promo strong{
+background:white;
+padding:5px 12px;
+border-radius:6px;
+color:#ff6600;
+}
+/* SERVICIOS */
+
+.servicios{
+padding:60px 10%;
+text-align:center;
+}
+
+.servicios h2{
+font-size:32px;
+margin-bottom:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.icon{
+font-size:28px;
+color:#0d6efd;
+margin-bottom:10px;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+background:#0d6efd;
+color:white;
+padding:70px 10%;
+text-align:center;
+}
+
+.beneficios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.beneficio-card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.beneficio-card:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.2);
+}
+
+.beneficio-card i{
+font-size:35px;
+margin-bottom:15px;
+}
+
+/* CONTACTO */
+
+.contacto{
+padding:50px 10%;
+text-align:center;
+}
+
+/* REDES */
+
+.redes{
+text-align:center;
+padding:40px;
+background:white;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* NUEVO - CARRUSEL CASOS REALES */
+
+.casos{
+padding:70px 10%;
+background:#f9fafb;
+text-align:center;
+}
+
+.casos h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.carousel{
+position:relative;
+max-width:900px;
+margin:auto;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.carousel img{
+width:100%;
+display:none;
+}
+
+.carousel img.active{
+display:block;
+}
+
+.carousel-btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.6);
+color:white;
+border:none;
+font-size:24px;
+padding:10px 15px;
+cursor:pointer;
+border-radius:6px;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logoviveclean.jpeg">
+<h1>VIVECLEAN</h1>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h2>Deja tus colchones y muebles como nuevos</h2>
+
+<p>Limpieza profunda que elimina ácaros, manchas y malos olores</p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20información%20sobre%20el%20servicio">
+
+<i class="fa-brands fa-whatsapp"></i> Solicitar Servicio
+
+</a>
+
+</div>
+
+</section>
+
+
+<section class="promo">
+
+<h2>🎉 Promoción Especial</h2>
+
+<p>Separa tu servicio hoy y obtén <strong>5% de descuento</strong></p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20separar%20un%20servicio">
+
+<i class="fa-brands fa-whatsapp"></i> Separar Servicio
+
+</a>
+
+</section>
+
+
+<section class="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-bed icon"></i>
+
+<img src="images/aspirandocolchones.jpeg">
+
+<h3>Colchones</h3>
+
+<p>Limpieza profunda eliminando ácaros y manchas.</p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20limpiar%20mi%20colchón">
+<i class="fa-brands fa-whatsapp"></i>
+Consultar
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-window-maximize icon"></i>
+
+<img src="images/cortinasroller.jpeg">
+
+<h3>Cortinas Roller</h3>
+
+<p>Limpieza profesional de Cortinas en general</p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20limpiar%20mis%20muebles">
+<i class="fa-brands fa-whatsapp"></i>
+Consultar
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-couch icon"></i>
+
+<img src="images/aspirandoia.png">
+
+<h3>Muebles</h3>
+
+<p>Limpieza profunda eliminando polvo y bacterias.</p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20limpiar%20mis%20sillones">
+<i class="fa-brands fa-whatsapp"></i>
+Consultar
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-rug icon"></i>
+
+<img src="images/alfombraia.png">
+
+<h3>Alfombras</h3>
+
+<p>Limpieza profunda eliminando polvo y bacterias.</p>
+
+<a class="btn" href="https://wa.me/51982756063?text=Hola%20quiero%20limpiar%20mis%20puff">
+<i class="fa-brands fa-whatsapp"></i>
+Consultar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NUEVA SECCION CARRUSEL -->
+
+<section class="casos">
+
+<h2>Resultados Reales de Nuestro Trabajo</h2>
+
+<div class="carousel">
+
+<button class="carousel-btn prev">&#10094;</button>
+
+<img src="images/sillanatesydespues.jpeg" class="active">
+<img src="images/puffantesydespues.jpeg">
+<img src="images/colchones2.jpeg">
+<img src="images/mueblesantesydespues.png">
+
+<button class="carousel-btn next">&#10095;</button>
+
+</div>
+
+</section>
+
+
+<section class="beneficios">
+
+<h2>¿Por qué elegir VIVECLEAN?</h2>
+<br>
+
+<div class="beneficios-grid">
+
+<div class="beneficio-card">
+<i class="fa-solid fa-shield-virus"></i>
+<h3>Eliminación de Ácaros</h3>
+<p>Eliminamos bacterias y alérgenos.</p>
+</div>
+
+<div class="beneficio-card">
+<i class="fa-solid fa-spray-can-sparkles"></i>
+<h3>Equipos Profesionales</h3>
+<p>Maquinaria especializada.</p>
+</div>
+
+<div class="beneficio-card">
+<i class="fa-solid fa-wind"></i>
+<h3>Secado Rápido</h3>
+<p>Tecnología de secado rápido.</p>
+</div>
+
+<div class="beneficio-card">
+<i class="fa-solid fa-truck"></i>
+<h3>Servicio a Domicilio</h3>
+<p>Vamos hasta tu casa.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contacto">
+
+<h2>Agenda tu servicio hoy</h2>
+
+<p>Contáctanos por WhatsApp o Facebook</p>
+
+<a class="btn" href="https://wa.me/51982756063">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<br>
+
+<a class="btn-facebook" href="https://facebook.com" target="_blank">
+<i class="fa-brands fa-facebook"></i> Facebook
+</a>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 VIVECLEAN - Limpieza Profesional</p>
+
+</footer>
+
+
+<a class="whatsapp" href="https://wa.me/51982756063">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<script>
+
+const slides = document.querySelectorAll(".carousel img");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+let index = 0;
+
+function showSlide(i){
+slides.forEach(img => img.classList.remove("active"));
+slides[i].classList.add("active");
+}
+
+next.onclick = () => {
+index = (index + 1) % slides.length;
+showSlide(index);
+};
+
+prev.onclick = () => {
+index = (index - 1 + slides.length) % slides.length;
+showSlide(index);
+};
+
+setInterval(()=>{
+index = (index + 1) % slides.length;
+showSlide(index);
+},4000);
+
+</script>
+
+</body>
+
+</html>
